@@ -9,7 +9,7 @@
     },
     "api": {
         "type": "openapi",
-        "url": "https://<YOUR_SERVER>/.well-known/openapi.yaml",
+        "url": "https://<YOUR_SERVER>/openapi.yaml",
         "is_user_authenticated": false
     },
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg",
