@@ -9,6 +9,11 @@ This repository includes all the necessary code to run the plugin.
 Here is a demonstration of the TODO plugin in action.
 <img width="817" alt="screen capture of the TODO plugin demo" src="https://github.com/yoshinorisano/chatgpt-simple-todo-plugin/assets/385102/134a12cf-db9a-4d4b-8a1c-4489b81d9159">
 
+# Requirements
+- Basic understanding of Python programming, JSON, and YAML.
+- Access to ChatGPT Plugins. If you don't currently have access, you can apply for it [here](https://openai.com/waitlist/plugins).
+- (Optional) Access to ChatGPT GPT-4 for code generation. You can also use [my code](https://github.com/yoshinorisano/chatgpt-simple-todo-plugin/blob/main/main.py) if you cannot generate expected code.
+
 # Instructions
 Here is my memo. You can also follow this instruction.
 
@@ -48,6 +53,11 @@ async def get_openapi_yaml():
 4. Create a python environment on CodeSandbox.
 
 5. Add dependency libraries to `requirements.txt`
+
+```
+fastapi
+uvicorn
+```
 
 6. Restart the environment to create the updated container for us.
 
