@@ -14,6 +14,12 @@ Here is a demonstration of the TODO plugin in action.
 - Access to ChatGPT Plugins. If you don't currently have access, you can apply for it [here](https://openai.com/waitlist/plugins).
 - (Optional) Access to ChatGPT GPT-4 for code generation. You can also use [my code](https://github.com/yoshinorisano/chatgpt-simple-todo-plugin/blob/main/main.py) if you cannot generate expected code.
 
+# Additional Information
+Since making this repository public, I've noticed that the original code is [available](https://github.com/openai/plugins-quickstart).
+However, it's still worth trying out this repository compared to the original.
+Because the original repository lacks sufficient explanation, which could be a hurdle for beginners.
+As of May 14, 2023, it reflects the latest information, which is beneficial for beginners as well.
+
 # Instructions
 Here is my memo. You can also follow this instruction.
 
