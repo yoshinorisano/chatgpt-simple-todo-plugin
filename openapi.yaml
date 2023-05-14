@@ -1,0 +1,109 @@
+openapi: 3.0.2
+info:
+  title: Simple TODO API
+  description: This is a very simple TODO API
+  version: 1.0.0
+paths:
+  /todos:
+    get:
+      summary: Get Todos
+      operationId: get_todos_todos_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Todos Todos Get
+                type: array
+                items:
+                  $ref: '#/components/schemas/TodoItem'
+    post:
+      summary: Create Todo
+      operationId: create_todo_todos_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TodoItem'
+        required: true
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /todos/{todo_id}:
+    delete:
+      summary: Delete Todo
+      operationId: delete_todo_todos__todo_id__delete
+      parameters:
+        - required: true
+          schema:
+            title: Todo Id
+            type: integer
+          name: todo_id
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+components:
+  schemas:
+    HTTPValidationError:
+      title: HTTPValidationError
+      type: object
+      properties:
+        detail:
+          title: Detail
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationError'
+    TodoItem:
+      title: TodoItem
+      required:
+        - title
+      type: object
+      properties:
+        title:
+          title: Title
+          type: string
+        description:
+          title: Description
+          type: string
+    ValidationError:
+      title: ValidationError
+      required:
+        - loc
+        - msg
+        - type
+      type: object
+      properties:
+        loc:
+          title: Location
+          type: array
+          items:
+            anyOf:
+              - type: string
+              - type: integer
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string
+
