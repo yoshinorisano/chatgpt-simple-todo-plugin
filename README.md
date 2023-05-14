@@ -37,9 +37,9 @@ Include a `__main__` section which will run this app using uvicorn. The Python m
 In addition to the normal endpoints, include a route `/.well-known/ai-plugin.json` which serves (as JSON) the contents of `./manifest.json`, located in the same directory as `main.py`. Exclude this route from the OpenAPI spec, and don’t serve any other static content.
 ```
 
-You will get differnt code and will not work properly. Retry generating the code, and if that does not work, modify it manually.
+You will get differnt code (compare to my [main.py](https://github.com/yoshinorisano/chatgpt-simple-todo-plugin/blob/main/main.py)) and will not work properly. Retry generating the code, and if that does not work, modify it manually.
 
-Add the following code to service `openapi.yaml`.
+Add the following code to serve `openapi.yaml`.
 
 ```python
 # Added manually after code generation.
