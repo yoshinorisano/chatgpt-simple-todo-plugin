@@ -1,12 +1,12 @@
 # A Simple TODO ChatGPT Plugin
 
-A proof-of-concept ToDo ChatGPT Plugin using Python.
+This is a proof-of-concept for a ToDo ChatGPT Plugin, implemented using Python.
 
-The primary value of this repository is to replicate the experience of developing the ChatGPT plugin for the first time. You will quickly gain experience developing ChatGPT plugin.
+The primary value of this repository is to replicate the experience of developing the ChatGPT plugin for the first time. This will allow you to *rapidly acquire experience in developing a ChatGPT plugin*.
 
-All the code need to run the plugin is included in this repository.
+This repository includes all the necessary code to run the plugin.
 
-Here is the capture of the TODO plugin demo. 
+Here is a demonstration of the TODO plugin in action.
 <img width="817" alt="screen capture of the TODO plugin demo" src="https://github.com/yoshinorisano/chatgpt-simple-todo-plugin/assets/385102/134a12cf-db9a-4d4b-8a1c-4489b81d9159">
 
 # Instructions
@@ -88,7 +88,7 @@ I got the specification like this:
 [...]
 ```
 
-11. Copy the OpenAPI specification and paste it into [Swagger Editor](https://editor.swagger.io/) to convert json to yaml. Create `openapi.yaml` on the top directory and paste the yaml.
+11. Copy the OpenAPI specification and paste it into [Swagger Editor](https://editor.swagger.io/) to convert json to yaml. Then, the Swagger Editor will pop up the dialog "Would you like to convert your JSON into YAML?" and hit OK button. Create `openapi.yaml` on the top directory and paste the yaml.
 
 12. Almost done. All you need to do is to register the plugin with ChatGPT. Open ChatGPT and then open `Plugin store` and then click `Develop your own plugin`. After that, follow the instruction shown in the display.
 
