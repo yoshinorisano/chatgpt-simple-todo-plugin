@@ -1,8 +1,13 @@
-# A Simple TODO App for ChatGPT Plugin
+# A Simple TODO ChatGPT Plugin
 
 A proof-of-concept ToDo ChatGPT Plugin using Python.
 
 The primary value of this repository is to replicate the experience of developing the ChatGPT plugin for the first time. You will quickly gain experience developing ChatGPT plugin.
+
+All the code need to run the plugin is included in this repository.
+
+Here is the capture of the TODO plugin demo. 
+<img width="817" alt="screen capture of the TODO plugin demo" src="https://github.com/yoshinorisano/chatgpt-simple-todo-plugin/assets/385102/134a12cf-db9a-4d4b-8a1c-4489b81d9159">
 
 # Instructions
 Here is my memo. You can also follow this instruction.
@@ -87,7 +92,4 @@ I got the specification like this:
 
 12. Almost done. All you need to do is to register the plugin with ChatGPT. Open ChatGPT and then open `Plugin store` and then click `Develop your own plugin`. After that, follow the instruction shown in the display.
 
-13. Voilà! ChatGPT now uses our TODO apps.
-
-Here is a screen capture.
-
+13. Voilà! ChatGPT now uses our TODO plugin.
